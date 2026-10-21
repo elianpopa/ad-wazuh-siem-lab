@@ -1,0 +1,10 @@
+<!--
+  Add this block to the Wazuh agent config on CLIENT1:
+  C:\Program Files (x86)\ossec-agent\ossec.conf
+  Place it inside <ossec_config>, next to the existing <localfile> entries,
+  then restart the agent:  Restart-Service WazuhSvc
+-->
+<localfile>
+  <location>Microsoft-Windows-Sysmon/Operational</location>
+  <log_format>eventchannel</log_format>
+</localfile>
